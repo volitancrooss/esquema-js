@@ -3,11 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTRODUCCIÓN</title>
+    <title>OPERADORES</title>
 </head>
 <body>
-    <h1>INTRODUCCIÓN</h1>
-    <p>A principios de los años 90, en los inicios de la World Wide Web,<br> las páginas web se escribían básicamente en HTML y CSS. <br>Sin embargo, estos lenguajes solo permitían mostrar contenido estático.<br> Para mejorar la interacción con el usuario, Netscape contrató a Brendan Eich, <br>quien en 1995 desarrolló LiveScript, posteriormente renombrado como JavaScript.<br> Su propósito era ejecutar código en el navegador sin depender del servidor, <br>acelerando la experiencia web.</p>
-    <img src="https://miro.medium.com/v2/resize:fit:980/0*Ndvhpdt9G6L4Nj08.png" alt="img" width="100">
+    <h1>5. OPERADORES</h1>
+    <h2>Unidad 5
+        OPERADORES</h2>
+    <p>Los operadores son símbolos especiales con los que se realiza algún <br>
+        tipo de cálculo sobre uno o más valores, cuyo resultado es otro valor.
+        Los operadores se agrupan en las siguientes categorías:</p>
+        <ul>
+            <li><strong>Aritméticos.</strong> Realizan operaciones matemáticas sobre sus
+                operandos.</li>
+            <li><strong>Asignación.</strong> Asignan el valor del operando derecho al
+                izquierdo. El más conocido es ʻ=ʼ.</li>
+            <li><strong>Comparación.</strong> Tal como indica su nombre, los operadores de
+                este grupo comparan los operandos y devuelven el valor true
+                si son iguales o false en caso contrario.</li>
+            <li><strong>Lógicos.</strong> Al igual que los operadores de la categoría anterior,
+                estos también devuelven el valor true o false, pero a
+                diferencia de ellos, dicho valor se obtiene aplicando las reglas
+                de algebra de Boole.</li>
+            <li><strong>condición?valor1:valor2.</strong> Operador ternario formado
+                por una condición y dos valores.</li>
+            <li><strong>typeof operando.</strong> Operador unario que devuelve el tipo de
+                datos al que pertenece su operando.</li>
+        <h2>5.1 OPERADORES ARITMÉTICOS</h2>
+        <p>Los operadores aritméticos son los responsables de las operaciones
+            matemáticas básicas, a saber:</p>
+        <ul>
+            <li><strong>Suma (ʻ+ʼ).</strong> Es el más particular, porque suma los dos
+                operandos cuando su valor es un número y los concatena
+                cuando se trata de cadenas.</li>
+            <li><strong>Resta (ʻ-ʻ).</strong> Resta los dos operandos.</li>
+            <li><strong>Multiplicación (ʻ*ʼ).</strong> Multiplica los dos operandos.</li>
+            <li><strong>División (ʻ/ʼ).</strong> Divide el primer operando (izquierdo) por el
+                segundo (derecho).</li>
+            <li><strong>Resto (ʻ%ʼ).</strong> Devuelve el resto de dividir el primer operando por
+                el segundo.</li>
+            <li><strong>Exponenciación (ʻ**ʼ).</strong> Eleva el primer operando al segundo.</li>
+            <li><strong>Incremento (ʻ++ʼ).</strong> Incrementa (agrega uno) al operando.</li>
+            <li><strong>Decremento (ʻ--ʼ).</strong> Decrementa (resta uno) al operando.</li>
+            <li><strong>Negación (ʻ-ʼ).</strong> Cambia de signo del operando. Aunque el
+                símbolo es el mismo que el de la resta, no hay ambigüedad
+                porque este operador es unario, mientras que el de la resta es
+                binario.</li>
+        </ul>
+        <h2>5.2 OPERADORES DE ASIGNACIÓN</h2>
+        <p>Los operadores de asignación almacenan en una variable el <br>
+            resultado de una expresión. JavaScript ofrece todos estos:</p>
+            <ul>
+                <li><strong>Asignación simple (ʻ=ʼ).</strong></li>
+                <li><strong>Asignación de suma (ʻ+=ʼ).</strong></li>
+                <li><strong>Asignación de resta (ʻ-=ʼ).</strong></li>
+                <li><strong>Asignación de multiplicación (ʻ*=ʼ).</strong></li>
+                <li><strong>Asignación de división (ʻ/=ʼ).</strong></li>
+                <li><strong>Asignación de exponenciación (ʻ**=ʼ).</strong></li>
+                <li><strong>Asignación de resto (ʻ%=ʼ).</strong></li>
+            </ul>
+        <h2>5.3 OPERADORES DE COMPARACIÓN</h2>
+        <p>Los operadores de comparación devuelven el valor true cuando sus <br>
+            operandos son iguales o false en caso contrario. <br>
+            JavaScript ofrece los siguientes operadores de comparación:</p>
+        <ul>
+            <li>Igual (ʻ==ʼ).</li>
+            <li>Estrictamente igual (ʻ===ʼ).</li>
+            <li>Distinto (ʻ!=ʼ).</li>
+            <li>Estrictamente distinto (ʻ!==ʼ).</li>
+            <li>Operadores de comparación simples (ʻ<ʼ, ʻ<=ʼ, ʻ>ʼ y ʻ>=ʼ).</li>
+        </ul>
+        <h2>5.4 OPERADORES LÓGICOS</h2>
+        <p>Los operadores lógicos aplican las reglas del álgebra de Boole a sus
+            operadores.</p>
+        <ul>
+            <li>AND (ʻ&&ʼ). Devuelve True si ambos operandos son True de lo contrario devolvera False.</li>
+            <li>OR (ʻ||ʼ). Devuelve true si alguno de sus operandos es true de lo contrario devolvería false.</li>
+            <li>NOT (ʻ!ʼ). Devuelve true si su único operando es false, y viceversa.</li>
+        </ul>
+        <h2>5.5 EL OPERADOR CONDICIONAL</h2>
+        <p>El operador condicional es el único ternario ya que está <br>
+        formado por una condición y dos valores:</p>
+        <pre><code>condición?valor1:valor2</code></pre>
+        <p>Si la condición es true, el operador condicional devuelve el primer valor, <br>
+        en caso contrario, devuelve el segundo valor.</p>
+        <h2>5.6 EL OPERADOR typeof</h2>
+        <p>El operador typeof es un operador unario muy especial porque
+            devuelve una cadena con el tipo de su operando. Admite la siguiente
+            sintaxis:</p>
+            <pre><code>typeof operador</code></pre>
+        <p>A parte de String, Number, BigInt, Boolean, Null y
+            Undefined, este operador también identifica los siguientes tipos de
+            datos:</p>
+            <ul>
+                <li><strong>Object.</strong></li>
+                <li><strong>Function.</strong></li>
+                <li><strong>Symbol.</strong></li>
+            </ul>
+        <h2>5.7 PRECEDENCIA DE OPERADORES</h2>
+        <p>Muchas de las expresiones que tenga que desarrollar en la práctica <br>
+            seguramente requieran más de un operador.</p>
+        <ul>
+            <li><strong>Operadores de incremento, decremento (++, --).</strong></li>
+            <li><strong>Operadores de negación y obtención de tipo (-, typeof).</strong></li>
+            <li><strong>Operador de exponenciación (**).</strong></li>
+            <li><strong>Operadores de multiplicación, división y resto (*, /, %).</strong></li>
+            <li><strong>Operadores de adición y sustracción (+, -).</strong></li>
+            <li><strong>Operadores de comparación (<, <=, >, >=).</strong></li>
+            <li><strong>Operadores de igualdad (==, !=, ===, !==).</strong></li>
+            <li><strong>Operador condicional (?:).</strong></li>
+            <li><strong>Operadores de asignación (=, +=, -=, *=, /=, %=, **=).</strong></li>
+        </ul>
+        <br>
+    <img src="https://cdn-icons-png.flaticon.com/512/65/65709.png" alt="img" width="100">
 </body>
 </html>

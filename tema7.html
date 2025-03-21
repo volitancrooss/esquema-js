@@ -3,11 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTRODUCCIÓN</title>
+    <title>FUNCIONES</title>
 </head>
 <body>
-    <h1>INTRODUCCIÓN</h1>
-    <p>A principios de los años 90, en los inicios de la World Wide Web,<br> las páginas web se escribían básicamente en HTML y CSS. <br>Sin embargo, estos lenguajes solo permitían mostrar contenido estático.<br> Para mejorar la interacción con el usuario, Netscape contrató a Brendan Eich, <br>quien en 1995 desarrolló LiveScript, posteriormente renombrado como JavaScript.<br> Su propósito era ejecutar código en el navegador sin depender del servidor, <br>acelerando la experiencia web.</p>
-    <img src="https://miro.medium.com/v2/resize:fit:980/0*Ndvhpdt9G6L4Nj08.png" alt="img" width="100">
+    <h1>7. FUNCIONES</h1>
+    <h2>Unidad 7
+        FUNCIONES</h2>
+    <p>una función se define como un conjunto de <br>
+        sentencias que realizan una tarea específica. Su utilidad es enorme, <br>
+        ya que permite dividir un programa en partes más fáciles de <br>
+        implementar y, en consecuencia, de mantener. La sintaxis con la que se declara una función es la siguiente:</p>
+    <pre><code>
+        function nombreFuncion(parametro1, parametro2) {
+            ...
+        }
+    </code></pre>
+    <h2>7.1 INVOCACIÓN DE UNA FUNCIÓN</h2>
+    <p>Para invocar una función, se utiliza el nombre de la función seguido de <br>
+        paréntesis y, opcionalmente, se pasan los valores que sean necesarios para <br>
+        ejecutar la función.</p>
+        <pre><code>
+            nombreFuncion(valor1, valor2);
+        </code></pre>
+    <h2>7.2 EL TIPO DE DATOS FUNCTION</h2>
+    <p>Las funciones son objetos de tipo Function. Esto le puede resultar <br>
+        extraño, pero en JavaScript todo puede ser modelado como un objeto.</p>
+    <pre><code>
+        function factorial(x) {
+            ...
+        };
+    </code></pre>
+    <h2>7.3 ALCANCE DE LAS VARIABLES</h2>
+    <p>El alcance o ámbito de una variable es la parte del
+        programa en la que se puede acceder a ella.</p>
+        <pre><code>
+            let x = 10;
+            function f() {
+                let y = 20;
+                ...
+            }
+        </code></pre>
+    <img src="https://cdn-icons-png.flaticon.com/512/2959/2959013.png" alt="img" width="100">
 </body>
 </html>

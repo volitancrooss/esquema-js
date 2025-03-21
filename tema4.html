@@ -3,11 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTRODUCCIÓN</title>
+    <title>TIPOS DE DATOS PRIMITIVOS</title>
 </head>
 <body>
-    <h1>INTRODUCCIÓN</h1>
-    <p>A principios de los años 90, en los inicios de la World Wide Web,<br> las páginas web se escribían básicamente en HTML y CSS. <br>Sin embargo, estos lenguajes solo permitían mostrar contenido estático.<br> Para mejorar la interacción con el usuario, Netscape contrató a Brendan Eich, <br>quien en 1995 desarrolló LiveScript, posteriormente renombrado como JavaScript.<br> Su propósito era ejecutar código en el navegador sin depender del servidor, <br>acelerando la experiencia web.</p>
-    <img src="https://miro.medium.com/v2/resize:fit:980/0*Ndvhpdt9G6L4Nj08.png" alt="img" width="100">
+    <h1>4. TIPOS DE DATOS PRIMITIVOS</h1>
+    <h2>Unidad 4
+        TIPOS DE DATOS PRIMITIVOS</h2>
+    <p>Los datos se agrupan en tipos que determinan el <br>
+        conjunto de valores que lo componen y las operaciones en las que <br>
+        pueden intervenir (además de la forma en la que se representan <br>
+        internamente por el ordenador).</p>
+        <ul>
+            <li><strong>Boolean.</strong></li>
+            <li><strong></strong>Number.</strong></li>
+            <li><strong></strong>BigInt.</strong></li>
+            <li><strong></strong>String.</strong></li>
+            <li><strong></strong>Null.</strong></li>
+            <li><strong></strong>Undefined.</strong></li>
+        </ul>
+        <h2>4.1 BOOLEAN</h2>
+        <p>Como se acaba de indicar, el tipo de datos Boolean está formado <br>
+            solo por los dos valores, que representan los conceptos de verdadero <br>
+            (true) y falso (false).</p>
+        <h2>4.2 NUMBER</h2>
+        <p>A diferencia de otros lenguajes de programación que distinguen <br>
+            entre enteros, con signo, sin signo, decimales de simple o doble <br>
+            precisión, etc., en JavaScript todos los valores numéricos forman <br>
+            parte del tipo de datos Number.</p>
+        <h2>4.3 STRING</h2>
+        <p>El tipo de datos String se utiliza para el manejo de textos, <br>
+            formados por una secuencia de caracteres entre comillas.</p>
+            <pre><code> "Hola Mundo" </code></pre>
+        <h2>4.4 NULL Y UNDEFINED</h2>
+        <p>Son diferentes ya que el primero representa un <br>
+            valor nulo o irrelevante, mientras que el segundo es el que tiene una <br>
+            variable a la que todavía no se le ha asignado ningún valor.</p>
+        <h2>4.5 CONVERSIÓN ENTRE TIPOS DE DATOS
+            PRIMITIVOS</h2>
+            <p>Los operadores están pensados para trabajar con operandos <br>
+                del mismo tipo, cuando esto no ocurre JavaScript trata de <br>
+                convertirlos automáticamente al tipo adecuado.</p>
+            <br>
+            <p>Si se quiere mantener un mayor control sobre la ejecución del programa, <br>
+                lo más seguro es forzar de forma explícita dicha conversión con las <br>
+                siguientes funciones globales:</p>
+                <ul>
+                    <li><strong>Number().</strong> Convierte un tipo de datos primitivo en un
+                        número.</li>
+                    <li><strong>String().</strong> Convierte un tipo de datos primitivo en una
+                        cadena.</li>
+                    <li><strong>Boolean().</strong> Convierte un tipo de datos primitivo en un valor
+                        booleano.</li>
+                </ul>
+                <h2>4.5.1 Conversión a números</h2>
+                    <p>Transforma cualquier tipo de dato primitivo en
+                        un número es:</p>
+                        <pre><code>Number("123") //123 </code></pre>
+                        <pre><code>Number("1 23") //NaN </code></pre>
+                        <pre><code>Number("") //0 </code></pre>
+                    <p>La conversión de cadenas a números se hace de forma automática
+                        en todas las operaciones aritméticas excepto la suma</p>
+                        <pre><code>"10" - "2" //8</code></pre>
+                        <pre><code>"10" * "2" //20</code></pre>
+                        <pre><code>"10" / "2" //5</code></pre>
+                        <pre><code>Number("10") + Number("2") //12</code></pre>
+                        <pre><code>"10" + "2" //102</code></pre>
+                    <p>A parte de Number, JavaScript ofrece otras funciones de conversión como son:</p>
+                    <ul>
+                        <li><strong>parseInt().</strong> Convierte una cadena en un número entero.</li>
+                        <li><strong>parseFloat().</strong> Convierte una cadena en un número decimal.</li>
+                    </ul>
+                    <h2>4.5.2 Conversión a cadenas</h2>
+                    <p>La función global que transforma cualquier otro tipo de datos <br>
+                        primitivo en una cadena es:</p>
+                        <pre><code>String(123) //"123"</code></pre>
+                        <pre><code>String(false) //"false"</code></pre>
+                        <pre><code>(123).toString() //"123"</code></pre>
+                    <p>Otros métodos de conversión de números a cadenas que le podrían
+                        resultar interesantes son:</p>
+                        <ul>
+                            <li><strong>toFixed(número, decimales).</strong> Convierte el número en
+                                una cadena, que se redondearía con los decimales indicados
+                                opcionalmente como argumento.</li>
+                            <li><strong>toExponential(número, decimales).</strong> Su
+                                comportamiento es similar al del método anterior, excepto
+                                que el número se expresaría en notación exponencial.</li>
+                            <li><strong>toPrecision(número, dígitos).</strong> Su comportamiento
+                                vuelve a ser similar al del primer método, solo que, en este, el
+                                argumento opcional indicaría el número de dígitos al que se
+                                redondearía el número.</li>
+                        </ul>
+                    <h2>4.5.3 Conversión a valores booleanos</h2>
+                    <p>Solo faltaría saber cómo convertirlo en <br>
+                        true o false. Para ello deberá utilizar la función global:</p>
+                        <pre><code>Boolean(null) //false</code></pre>
+                        <pre><code>Boolean(123) //true</code></pre>
+                        <pre><code>Boolean(0) //false</code></pre>
+
+    <img src="https://static.vecteezy.com/system/resources/previews/014/179/376/non_2x/primitive-man-standing-png.png" alt="img" width="100">
 </body>
 </html>

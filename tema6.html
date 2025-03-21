@@ -3,11 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INTRODUCCIÓN</title>
+    <title>SENTENCIAS DE CONTROL DE FLUJO</title>
 </head>
 <body>
-    <h1>INTRODUCCIÓN</h1>
-    <p>A principios de los años 90, en los inicios de la World Wide Web,<br> las páginas web se escribían básicamente en HTML y CSS. <br>Sin embargo, estos lenguajes solo permitían mostrar contenido estático.<br> Para mejorar la interacción con el usuario, Netscape contrató a Brendan Eich, <br>quien en 1995 desarrolló LiveScript, posteriormente renombrado como JavaScript.<br> Su propósito era ejecutar código en el navegador sin depender del servidor, <br>acelerando la experiencia web.</p>
-    <img src="https://miro.medium.com/v2/resize:fit:980/0*Ndvhpdt9G6L4Nj08.png" alt="img" width="100">
+    <h1>6. SENTENCIAS DE CONTROL DE FLUJO</h1>
+    <h2>Unidad 6
+        SENTENCIAS DE CONTROL DE FLUJO</h2>
+    <p>Necesitaremos saber de controlar el flujo de
+        ejecución para adaptarlo a las necesidades específicas de la
+        aplicación, algo que se consigue mediante el uso de sentencias
+        condicionales e iterativas. Las sentencias condicionales ofrecidas <br>
+        por JavaScript son:</p>
+        <ul>
+            <li><strong>if...else.</strong> Ejecuta un grupo u otro de sentencias
+                dependiendo de si se cumple o no una condición.</li>
+            <li><strong>switch...case.</strong> Ejecuta los grupos de sentencias asociados
+                a ciertos valores de una expresión.</li>
+        </ul>
+        <p>Las sentencias de repetición son estas otras:</p>
+        <ul>
+            <li><strong>while.</strong> Ejecuta de forma reiterada un grupo de sentencias
+                mientras se cumpla una condición.</li>
+            <li><strong>do...while.</strong> Similar al anterior, excepto que la condición se
+                comprueba después de haber ejecutado el grupo de
+                sentencias, no antes.</li>
+            <li><strong>for.</strong> Ejecuta un grupo de sentencias un número determinado
+                de veces.</li>
+        </ul>
+        <h2>6.1 IF...ELSE</h2>
+        <p>Esta sentencia condicional permite la ejecución de un bloque de <br>
+            código u otro en función del resultado devuelto por una expresión <br>
+            lógica y/o de comparación.</p>
+        <pre><code>
+            if (condición) {
+                ...
+            } else {
+                ...
+            }
+        </code></pre>
+        <h2>6.2 SWITCH...CASE</h2>
+        <p>Esta sentencia permite la ejecución de bloques de código asociados a
+            ciertos valores de una expresión. Su sintaxis es la siguiente:</p>
+        <pre><code>
+            switch (expresión) {
+                case valor1:
+                    ...
+                    break;
+                case valor2:
+                    ...
+                    break;
+                ...
+                default:
+                    ...
+            }
+        </code></pre>
+        <h2>6.3 FOR</h2>
+        <p>Esta sentencia ejecuta un bloque de código un determinado número <br>
+            de veces. Su sintaxis es la siguiente:</p>
+        <pre><code>
+            for (inicialización; condición; incremento) {
+                sentencias;
+            }
+        </code></pre>
+        <h2>6.4 WHILE Y DO...WHILE</h2>
+        <p>Esta sentencia ejecuta un bloque de código de forma reiterada <br>
+            mientras se cumpla una condición. Su sintaxis es la siguiente:</p>
+            <pre><code>
+                while (condición) {
+                    ...
+                }
+            </code></pre>
+        <h2>6.5 BREAK Y CONTINUE</h2>
+        <p>La sentencia <strong>break</strong> también se utilizó para forzar la salida de un <br>
+            bucle pero hay veces que no se quiere salir del bucle sino <br>
+            únicamente de la iteración en curso usamos la sentencia <strong>continue</strong>.</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/2145/2145691.png" alt="img" width="100">
 </body>
 </html>
